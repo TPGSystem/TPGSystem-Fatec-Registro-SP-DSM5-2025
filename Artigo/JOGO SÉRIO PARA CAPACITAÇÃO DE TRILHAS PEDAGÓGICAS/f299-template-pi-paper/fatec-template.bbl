@@ -1,0 +1,272 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{de2022game}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=fcae9d6322a57c4e6819691dc44fbd5b}{%
+           family={Andrade},
+           familyi={A\bibinitperiod},
+           given={Bruna\bibnamedelimb Raphaela\bibnamedelima Ferreira},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod},
+           prefixun=0}}%
+        {{un=0,uniquepart=base,hash=dc324c8d7ee933d4563629b9c4d72576}{%
+           family={Ruschival},
+           familyi={R\bibinitperiod},
+           given={Claudete\bibnamedelima Barbosa},
+           giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c3c1f2469b7a39bd2f5982e9a724f13b}{%
+           family={Rocha},
+           familyi={R\bibinitperiod},
+           given={Augusto\bibnamedelimb César\bibnamedelima Barreto},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{996302384138a62b4a371579c3af9a09}
+      \strng{fullhash}{996302384138a62b4a371579c3af9a09}
+      \strng{fullhashraw}{996302384138a62b4a371579c3af9a09}
+      \strng{bibnamehash}{996302384138a62b4a371579c3af9a09}
+      \strng{authorbibnamehash}{996302384138a62b4a371579c3af9a09}
+      \strng{authornamehash}{996302384138a62b4a371579c3af9a09}
+      \strng{authorfullhash}{996302384138a62b4a371579c3af9a09}
+      \strng{authorfullhashraw}{996302384138a62b4a371579c3af9a09}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{DAT Journal}
+      \field{number}{1}
+      \field{title}{Game Design: Plataforma gamificada como inovação tecnológica na educação}
+      \field{volume}{7}
+      \field{year}{2022}
+      \field{pages}{291\bibrangedash 306}
+      \range{pages}{16}
+    \endentry
+    \entry{questatlantis}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=aeff55e8afddb8025bfbacd5a49aecd7}{%
+           family={Barab},
+           familyi={B\bibinitperiod},
+           given={Sasha},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{aeff55e8afddb8025bfbacd5a49aecd7}
+      \strng{fullhash}{aeff55e8afddb8025bfbacd5a49aecd7}
+      \strng{fullhashraw}{aeff55e8afddb8025bfbacd5a49aecd7}
+      \strng{bibnamehash}{aeff55e8afddb8025bfbacd5a49aecd7}
+      \strng{authorbibnamehash}{aeff55e8afddb8025bfbacd5a49aecd7}
+      \strng{authornamehash}{aeff55e8afddb8025bfbacd5a49aecd7}
+      \strng{authorfullhash}{aeff55e8afddb8025bfbacd5a49aecd7}
+      \strng{authorfullhashraw}{aeff55e8afddb8025bfbacd5a49aecd7}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Quest Atlantis}
+      \field{year}{n.d.}
+      \verb{urlraw}
+      \verb https://sashabarab.org/projects/quest-atlantis/
+      \endverb
+      \verb{url}
+      \verb https://sashabarab.org/projects/quest-atlantis/
+      \endverb
+    \endentry
+    \entry{campbell1989heroi}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3bdef99c0bc291164aceff1e8fe85566}{%
+           family={Campbell},
+           familyi={C\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cholsamaj Fundacion}%
+      }
+      \strng{namehash}{3bdef99c0bc291164aceff1e8fe85566}
+      \strng{fullhash}{3bdef99c0bc291164aceff1e8fe85566}
+      \strng{fullhashraw}{3bdef99c0bc291164aceff1e8fe85566}
+      \strng{bibnamehash}{3bdef99c0bc291164aceff1e8fe85566}
+      \strng{authorbibnamehash}{3bdef99c0bc291164aceff1e8fe85566}
+      \strng{authornamehash}{3bdef99c0bc291164aceff1e8fe85566}
+      \strng{authorfullhash}{3bdef99c0bc291164aceff1e8fe85566}
+      \strng{authorfullhashraw}{3bdef99c0bc291164aceff1e8fe85566}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{O Herói de Mil Faces}
+      \field{year}{1989}
+    \endentry
+    \entry{hamari2014does}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=57c059873972ac3bb360bc05ba0a18f1}{%
+           family={Hamari},
+           familyi={H\bibinitperiod},
+           given={Juho},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8094ef3cdc640cff0e290d32d85869c6}{%
+           family={Koivisto},
+           familyi={K\bibinitperiod},
+           given={Jonna},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5dd89d1ebd375757b8466f2a4fc7f33f}{%
+           family={Sarsa},
+           familyi={S\bibinitperiod},
+           given={Harri},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{d0a428170cd0c96f6811c01b642b11bc}
+      \strng{fullhash}{d0a428170cd0c96f6811c01b642b11bc}
+      \strng{fullhashraw}{d0a428170cd0c96f6811c01b642b11bc}
+      \strng{bibnamehash}{d0a428170cd0c96f6811c01b642b11bc}
+      \strng{authorbibnamehash}{d0a428170cd0c96f6811c01b642b11bc}
+      \strng{authornamehash}{d0a428170cd0c96f6811c01b642b11bc}
+      \strng{authorfullhash}{d0a428170cd0c96f6811c01b642b11bc}
+      \strng{authorfullhashraw}{d0a428170cd0c96f6811c01b642b11bc}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2014 47th Hawaii International Conference on System Sciences}
+      \field{title}{Does Gamification Work?--A Literature Review of Empirical Studies on Gamification}
+      \field{year}{2014}
+      \field{pages}{3025\bibrangedash 3034}
+      \range{pages}{10}
+    \endentry
+    \entry{kroneidolo}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5732d3ef64fabcbf050d9c590e60184c}{%
+           family={Krone},
+           familyi={K\bibinitperiod},
+           given={Ricardo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5732d3ef64fabcbf050d9c590e60184c}
+      \strng{fullhash}{5732d3ef64fabcbf050d9c590e60184c}
+      \strng{fullhashraw}{5732d3ef64fabcbf050d9c590e60184c}
+      \strng{bibnamehash}{5732d3ef64fabcbf050d9c590e60184c}
+      \strng{authorbibnamehash}{5732d3ef64fabcbf050d9c590e60184c}
+      \strng{authornamehash}{5732d3ef64fabcbf050d9c590e60184c}
+      \strng{authorfullhash}{5732d3ef64fabcbf050d9c590e60184c}
+      \strng{authorfullhashraw}{5732d3ef64fabcbf050d9c590e60184c}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista do Instituto Histórico}
+      \field{title}{O Ídolo de Iguape}
+      \field{year}{n.d.}
+    \endentry
+    \entry{detecnicas}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=aa6b6645eddbc47ed1229cfd41346022}{%
+           family={Oliveira},
+           familyi={O\bibinitperiod},
+           given={Leonam\bibnamedelima Cordeiro},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod},
+           prefixun=0}}%
+      }
+      \strng{namehash}{aa6b6645eddbc47ed1229cfd41346022}
+      \strng{fullhash}{aa6b6645eddbc47ed1229cfd41346022}
+      \strng{fullhashraw}{aa6b6645eddbc47ed1229cfd41346022}
+      \strng{bibnamehash}{aa6b6645eddbc47ed1229cfd41346022}
+      \strng{authorbibnamehash}{aa6b6645eddbc47ed1229cfd41346022}
+      \strng{authornamehash}{aa6b6645eddbc47ed1229cfd41346022}
+      \strng{authorfullhash}{aa6b6645eddbc47ed1229cfd41346022}
+      \strng{authorfullhashraw}{aa6b6645eddbc47ed1229cfd41346022}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Rotman School of Management - University of Toronto}
+      \field{title}{Técnicas de Gamificação Aplicadas no Auxílio da Aprendizagem de Programação em Linguagem C}
+      \field{year}{2013}
+    \endentry
+    \entry{seaborn2015gamification}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=828035bea3055bd7f8280099721ef024}{%
+           family={Seaborn},
+           familyi={S\bibinitperiod},
+           given={Katie},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a5ae55da724e7a4d4ee7e113041b97d4}{%
+           family={Fels},
+           familyi={F\bibinitperiod},
+           given={Deborah\bibnamedelima I.},
+           giveni={D\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{2120557272c9f2139eaa09b15a7c07ea}
+      \strng{fullhash}{2120557272c9f2139eaa09b15a7c07ea}
+      \strng{fullhashraw}{2120557272c9f2139eaa09b15a7c07ea}
+      \strng{bibnamehash}{2120557272c9f2139eaa09b15a7c07ea}
+      \strng{authorbibnamehash}{2120557272c9f2139eaa09b15a7c07ea}
+      \strng{authornamehash}{2120557272c9f2139eaa09b15a7c07ea}
+      \strng{authorfullhash}{2120557272c9f2139eaa09b15a7c07ea}
+      \strng{authorfullhashraw}{2120557272c9f2139eaa09b15a7c07ea}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Human-Computer Studies}
+      \field{title}{Gamification in Theory and Action: A Survey}
+      \field{volume}{74}
+      \field{year}{2015}
+      \field{pages}{14\bibrangedash 31}
+      \range{pages}{18}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

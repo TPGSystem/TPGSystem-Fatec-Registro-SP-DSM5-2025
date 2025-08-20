@@ -1,0 +1,3 @@
+Medida fotos personagens 5x7cm -> 591x827px
+
+Moldura 7X9cm -> 827x1063px

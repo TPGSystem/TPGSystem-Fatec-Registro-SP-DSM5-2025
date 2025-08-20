@@ -1,0 +1,7 @@
+LEIA-ME
+
+Necessário Instalar Python 3.10 e a Biblioteca Pygame (pip install pygame no CMD)
+
+Sistemas de Login e Senha desativados, basta clicar no "Enter" que será direcionado para a próxima tela;
+
+Carregar o programa, pelo arquivo "main"

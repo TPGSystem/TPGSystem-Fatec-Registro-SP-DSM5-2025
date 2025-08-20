@@ -1,0 +1,9 @@
+Desenho de cenário com 2,5 px
+
+Desenho de personagem com 800X800 px
+
+Linha com 5 px
+
+Boss com 1600X1600 PX
+
+Linha com 7 px (Testar)

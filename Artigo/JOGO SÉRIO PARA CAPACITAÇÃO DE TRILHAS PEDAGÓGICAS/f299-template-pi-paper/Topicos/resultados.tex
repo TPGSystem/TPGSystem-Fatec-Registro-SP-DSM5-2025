@@ -1,0 +1,467 @@
+O desenvolvimento do TPG System ao longo do segundo semestre de 2024 alcançou avanços significativos, com base nas metodologias e ferramentas aplicadas. Os principais resultados preliminares podem ser resumidos nas seguintes áreas: 
+
+Organização do Desenvolvimento: A aplicação das metodologias ágeis Scrum e Kanban resultou em: 
+
+Planejamento eficaz e adaptativo: Cada sprint permitiu entregas incrementais e revisões frequentes, garantindo a evolução do projeto com base no feedback obtido. 
+
+\begin{enumerate}[label=\arabic*)]
+    \item \textbf{Organização do Desenvolvimento:} 
+    A aplicação das metodologias ágeis Scrum e Kanban resultou em:
+    
+    \begin{itemize}[leftmargin=2em]
+        \item \textbf{Planejamento eficaz e adaptativo:} Cada sprint permitiu entregas incrementais e revisões frequentes, garantindo a evolução do projeto com base no feedback obtido.
+    \end{itemize}
+    
+    \begin{itemize}[leftmargin=2em]
+        \item \textbf{Metodologia Scrum:} Conforme mencionado anteriormente, a Metodologia Scrum foi utilizada para gerenciar e priorizar os requisitos identificados durante o levantamento das necessidades dos usuários, como descrito a seguir:
+    \end{itemize}
+    
+    \begin{itemize}[leftmargin=2em]
+        \item \textbf{Contextualização:} 
+        Uma Unidade Escolar necessita categorizar, qualificar, quantificar e mensurar o desenvolvimento pedagógico e cognitivo de seus estudantes do Ensino Fundamental Anos Finais, quanto ao desenvolvimento das habilidades e competências do Componente Curricular ARTE e a compreensão desta correlação com as Linguagens Artísticas: Artes Visuais, Dança, Música e Teatro. 
+        Por meio desta ação, espera-se que os estudantes consigam melhorar sua compreensão, pensamento lógico e analítico, e que desta forma, possam também possuir subsídios para evoluir o seu desempenho nos Componentes: Língua Portuguesa, Matemática, Ciências, História e Geografia, que são avaliados durante as provas do SARESP (Sistema de Avaliação de Rendimento Escolar do Estado de São Paulo), avaliação realizada ao final do ano letivo para análise de desempenho escolar, pela Secretaria da Educação do Estado de São Paulo.
+    \end{itemize}
+
+    \item \textbf{Identificação das Prioridades do Cliente (Necessidades):}
+    \begin{itemize}[leftmargin=2em]
+        \item De um software que categoriza, qualifica, quantifica e mensura o nível de conhecimento inicial do estudante, e permite a geração de relatório diagnóstico de um determinado período;
+        \item De identificar quais são as Habilidades Defasadas e/ou Não Consolidadas pelo estudante durante os Anos Anteriores, para que possa ser estruturado um Relatório de Acompanhamento de Desenvolvimento;
+        \item De ter uma lista de Habilidades Defasadas e/ou Não Consolidadas pelo estudante, que necessitam serem desenvolvidas durante o ano letivo;
+        \item Precisa saber se o estudante conseguiu consolidar o desenvolvimento das Habilidades Defasadas e/ou Não Consolidadas, para que possa ser ofertado os níveis de Habilidades mais complexas que devem ser desenvolvidas durante o Ano Letivo Corrente;
+        \item Necessita da realização de Relatórios mensais, para acompanhamento do desempenho dos estudantes ao longo do ano letivo, que mostrem seu grau de evolução e comparativo de como estavam no início do processo e em que nível concluíram.
+    \end{itemize}
+
+    \item \textbf{Fazendo o Backlog (Levantamento de Requisitos):}
+    Para determinar os requisitos necessários de uma Unidade Escolar, foi levado em consideração como:
+
+    \begin{itemize}[leftmargin=2em]
+        \item \textbf{Requisitos Funcionais:}
+        \begin{itemize}
+            \item \textbf{Diagnóstico Inicial do Estudante:}
+            \begin{itemize}
+                \item O sistema deve permitir a inserção dos dados iniciais do aluno para qualificação e quantificação do nível de conhecimento em ARTE.
+                \item Permitir a geração de um relatório diagnóstico inicial com informações sobre o desempenho do aluno em diferentes habilidades e competências de ARTE.
+            \end{itemize}
+
+            \item \textbf{Identificação e Acompanhamento de Habilidades Defasadas e Não Consolidadas:}
+            \begin{itemize}
+                \item O sistema deve categorizar e identificar automaticamente as habilidades defasadas e não consolidadas com base no histórico do estudante.
+                \item Possibilidade de gerar relatórios de habilidades defasadas e/ou não consolidadas, com uma lista detalhada para acompanhamento.
+            \end{itemize}
+
+            \item \textbf{Acompanhamento do Desenvolvimento Cognitivo e Pedagógico:}
+            \begin{itemize}
+                \item O sistema deve registrar o progresso do estudante, destacando o desenvolvimento em cada uma das Linguagens Artísticas (Artes Visuais, Dança, Música e Teatro).
+                \item Exibir o progresso em uma interface de fácil visualização, como gráficos e tabelas, com dados históricos e comparativos.
+            \end{itemize}
+
+            \item \textbf{Consolidação de Habilidades e Identificação de Novos Níveis:}
+            \begin{itemize}
+                \item O sistema deve identificar e indicar quando o estudante consolida uma habilidade defasada.
+                \item Sugerir automaticamente habilidades mais complexas a serem desenvolvidas no próximo período, com base nas consolidações de habilidades anteriores.
+            \end{itemize}
+
+            \item \textbf{Relatórios Mensais de Desempenho:}
+            \begin{itemize}
+                \item Gerar relatórios mensais do desenvolvimento do estudante, mostrando a evolução em comparação ao nível inicial.
+                \item Disponibilizar opções de visualização do progresso, por competências, habilidades ou componentes curriculares.
+            \end{itemize}
+
+            \item \textbf{Exportação de Dados e Relatórios:}
+            \begin{itemize}
+                \item Permitir a exportação de relatórios em formatos como PDF, Excel e outros formatos comuns, para arquivamento e análise externa.
+                \item Integrar uma função para o envio dos relatórios por email para os responsáveis ​​pelo acompanhamento do aluno.
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}\begin{itemize}[leftmargin=2em]
+        \item \textbf{Requisitos Não Funcionais:}
+        \begin{itemize}[leftmargin=2em]
+            \item \textbf{Usabilidade:}
+            \begin{itemize}[leftmargin=2em]
+                \item A interface do sistema deve ser intuitiva e acessível para usuários com diferentes níveis de habilidade em informática.
+                \item Deve seguir boas práticas de design para facilitar a navegação e a compreensão dos dados apresentados.
+            \end{itemize}
+    
+            \item \textbf{Desempenho:}
+            \begin{itemize}[leftmargin=2em]
+                \item O sistema deve ser rápido e responsivo, capaz de gerar relatórios em até 5 segundos para turmas de até 50 alunos.
+                \item Deve suportar muitos acessos simultâneos sem prejudicar o desempenho.
+            \end{itemize}
+    
+            \item \textbf{Segurança:}
+            \begin{itemize}[leftmargin=2em]
+                \item Proteja os dados dos estudantes com criptografia e garanta o acesso apenas aos usuários autorizados.
+                \item Implementar autenticação forte para o acesso ao sistema e controle de funções baseadas em papéis (administrador, professor etc.).
+            \end{itemize}
+    
+            \item \textbf{Compatibilidade:}
+            \begin{itemize}[leftmargin=2em]
+                \item O sistema deve ser compatível com navegadores modernos (Chrome, Firefox, Safari) e dispositivos móveis para facilitar o acesso dos educadores e responsáveis.
+                \item A versão desktop deve ser otimizada para diferentes sistemas operacionais (Windows, MacOS, Linux).
+            \end{itemize}
+    
+            \item \textbf{Escalabilidade:}
+            \begin{itemize}[leftmargin=2em]
+                \item O sistema deve ser escalável para atender ao crescimento do número de estudantes e escolas sem comprometer o desempenho.
+                \item A arquitetura do sistema deve permitir o fácil aumento de recursos conforme necessário.
+            \end{itemize}
+    
+            \item \textbf{Manutenibilidade:}
+            \begin{itemize}[leftmargin=2em]
+                \item A implementação deve seguir boas práticas de programação para facilitar futuras atualizações e correções.
+                \item O código deve ser bem documentado e modularizado para permitir manutenções e ajustes sem impactar o sistema como um todo.
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+\end{enumerate}
+
+\item \textbf{Realizando o Sprint Planning 1 para começar o Planejamento do Release 1.0:}
+\end{enumerate}
+
+\begin{figure}[!h]
+    \centering
+    \caption{Sprint Planning 1 (Planejamento da “Corrida”) – Release 1.0 (Liberação da Etapas): }%
+    \label{fig:tabela4a}
+    \includegraphics[scale=0.6]{tabela4a}
+    \SourceOrNote{Autoria Própria (2024)}
+    \end{figure}
+
+    \begin{figure}[!h]
+        \centering
+        \caption{Sprint Planning 1 (Planejamento da “Corrida”) – Release 1.0 (Liberação da Etapas):  }%
+        \label{fig:tabela4b}
+        \includegraphics[scale=0.6]{tabela4b}
+        \SourceOrNote{Autoria Própria (2024)}
+        \end{figure}
+
+\item \textbf{Realizando o Sprint Planning 2: (Tabela 5):}
+    \end{enumerate}
+    
+    \begin{figure}[!h]
+        \centering
+        \caption{ Sprint Planning 2 (Planejamento da “Corrida”):  }%
+        \label{fig:tabela5}
+        \includegraphics[scale=0.6]{tabela5}
+        \SourceOrNote{Autoria Própria (2024)}
+        \end{figure}
+
+\begin{itemize}[leftmargin=2em]
+    \begin{itemize}[leftmargin=2em]
+        \item O uso do Kanban otimizou a priorização de tarefas e o monitoramento do progresso, facilitando a conclusão das atividades dentro dos prazos. 
+        \item \textbf{Metodologia Kanban (Tabela 6): } 
+    \end{itemize}
+
+    \begin{figure}[!h]
+        \centering
+        \caption{ Kanban: }%
+        \label{fig:tabela6a}
+        \includegraphics[scale=0.6]{tabela6a}
+        \SourceOrNote{Autoria Própria (2024)}
+        \end{figure}
+
+        \begin{figure}[!h]
+            \centering
+            \caption{ }%
+            \label{fig:tabela6b}
+            \includegraphics[scale=0.6]{tabela6b}
+            \SourceOrNote{Autoria Própria (2024)}
+            \end{figure}
+
+            \item \textbf{Estruturação Técnica:}
+    \begin{itemize}[leftmargin=2em]
+        \item API eficiente: O desenvolvimento de uma API em Node.js conectando o banco de dados ao front-end, permitindo sincronização em tempo real entre o jogo e o "Módulo Gestor".
+        \item Banco de dados funcional: A implementação do MongoDB está configurada para armazenar informações dos usuários e acompanhar o progresso dos estudantes no jogo, com base no Diagrama de Banco de Dados (Tabelas 7a, 7b e 7c).
+    \end{itemize}
+\end{itemize}
+
+\begin{figure}[!h]
+    \centering
+    \caption{Diagrama de Banco de Dados:}%
+    \label{fig:tabela7a_1}
+    \includegraphics[scale=0.5]{tabela7a_1}
+    \SourceOrNote{Autoria Própria (2024)}
+    \end{figure}
+
+    \begin{figure}[!h]
+        \centering
+        \caption{Diagrama de Banco de Dados:}%
+        \label{fig:tabela7a_2}
+        \includegraphics[scale=0.5]{tabela7a_2}
+        \SourceOrNote{Autoria Própria (2024)}
+        \end{figure}
+
+        \begin{figure}[!h]
+            \centering
+            \caption{Diagrama de Banco de Dados:}%
+            \label{fig:tabela7a_3}
+            \includegraphics[scale=0.5]{tabela7a_3}
+            \SourceOrNote{Autoria Própria (2024)}
+            \end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \caption{Diagrama de Banco de Dados:}%
+    \label{fig:tabela7b_1}
+    \includegraphics[scale=0.5]{tabela7b_1}
+    \SourceOrNote{Autoria Própria (2024)}
+    \end{figure}
+
+    \begin{figure}[!h]
+        \centering
+        \caption{Diagrama de Banco de Dados:}%
+        \label{fig:tabela7b_2}
+        \includegraphics[scale=0.5]{tabela7b_2}
+        \SourceOrNote{Autoria Própria (2024)}
+        \end{figure}
+
+        \begin{figure}[!h]
+            \centering
+            \caption{Diagrama de Banco de Dados:}%
+            \label{fig:tabela7b_3}
+            \includegraphics[scale=0.5]{tabela7b_3}
+            \SourceOrNote{Autoria Própria (2024)}
+            \end{figure}
+
+    \begin{figure}[!h]
+        \centering
+        \caption{Diagrama de Banco de Dados:}%
+        \label{fig:tabela7c_1}
+        \includegraphics[scale=0.5]{tabela7c_1}
+        \SourceOrNote{Autoria Própria (2024)}
+        \end{figure}
+
+        
+    \begin{figure}[!h]
+        \centering
+        \caption{Diagrama de Banco de Dados:}%
+        \label{fig:tabela7c_2}
+        \includegraphics[scale=0.5]{tabela7c_2}
+        \SourceOrNote{Autoria Própria (2024)}
+        \end{figure}
+
+        \clearpage
+        \item \textbf{Design de utilidades:}
+        \begin{itemize}[leftmargin=2em]
+                \item Protótipos funcionais: O uso do Figma permitiu a validação da interface do "Módulo Gestor" (Figura 3), garantindo usabilidade e clareza.
+            \end{itemize}
+        \end{itemize}
+        
+
+        \begin{figure}[!h]
+            \centering
+            \caption{Módulo Gestão (Layout de organização das Telas do “Módulo Gestor” - Figma) }%
+            \label{fig:figura3}
+            \includegraphics[scale=0.3]{figura3}
+            \SourceOrNote{Autoria Própria (2024)}
+            \end{figure}
+
+\item Criação visual de personagens: Personagens modelados e animados com ferramentas como Hero Forge (Figuras 4a, 4b, 4c e 4d), Inkscape (Figura 5) e Krita (Figura 6), asseguraram uma experiência visual coesa e interativa. 
+
+\begin{figure}[!h]
+    \centering
+    \caption{Hero Forge (Criação da Arte Conceitual do Personagem Africano Masculino) }%
+    \label{fig:figura4}
+    \includegraphics[scale=0.3]{figura4}
+    \SourceOrNote{Autoria Própria (2024)}
+    \end{figure}
+
+    \begin{figure}[!h]
+        \centering
+        \caption{Hero Forge (Criação da Arte Conceitual do Personagem Europeu Masculino) }%
+        \label{fig:figura4a}
+        \includegraphics[scale=0.4]{figura4a}
+        \SourceOrNote{Autoria Própria (2024)}
+        \end{figure}
+
+        \begin{figure}[!h]
+            \centering
+            \caption{Hero Forge (Criação da Arte Conceitual e Referencias para a Animação do Personagem Indígena Masculino) }%
+            \label{fig:figura4b}
+            \includegraphics[scale=0.3]{figura4b}
+            \SourceOrNote{Autoria Própria (2024)}
+            \end{figure}
+
+            \begin{figure}[!h]
+                \centering
+                \caption{Hero Forge (Criação da Arte Conceitual para as Personagens Femininas)  }%
+                \label{fig:figura4c}
+                \includegraphics[scale=0.3]{figura4c}
+                \SourceOrNote{Autoria Própria (2024)}
+                \end{figure}
+
+                \begin{figure}[!h]
+                    \centering
+                    \caption{ Inkscape (Estudo de Layout para Design de Telas - “Guardiões de Pindorama”)  }%
+                    \label{fig:figura5}
+                    \includegraphics[scale=0.3]{figura5}
+                    \SourceOrNote{Autoria Própria (2024)}
+                    \end{figure}
+
+                    \begin{figure}[!h]
+                        \centering
+                        \caption{ Kita (Vetorização de Personagem e estudo de Movimento para Sprites - “Guardiões de Pindorama”) }%
+                        \label{fig:figura6}
+                        \includegraphics[scale=0.3]{figura6}
+                        \SourceOrNote{Autoria Própria (2024)}
+                        \end{figure}
+
+                        \begin{figure}[!h]
+                            \centering
+                            \caption{Kita (Sprites Personagem Indígena Masculino - “Guardiões de Pindorama”)  }%
+                            \label{fig:figura7}
+                            \includegraphics[scale=0.3]{figura7}
+                            \SourceOrNote{Autoria Própria (2024)}
+                            \end{figure}
+\clearpage
+                        
+\item \textbf{Aprimoramento visual com IA (Figura 8a e 8b):}
+\begin{itemize}[leftmargin=2em]
+    \item A aplicação de plataformas de IA Generativa acelerou a criação de elementos gráficos, oferecendo diversidade e qualidade estética. 
+    \end{itemize}  
+        \end{itemize}
+
+    \begin{figure}[!h]
+        \centering
+        \caption{ Leonardo IA, Canva e Seaart (Criação de Tela de “Fundo” - Apresentação do Jogo - “Guardiões de Pindorama”) }%
+        \label{fig:figura8a}
+        \includegraphics[scale=0.2]{figura8a}
+        \SourceOrNote{Autoria Própria (2024)}
+        \end{figure}
+ 
+        \begin{figure}[!h]
+            \centering
+            \caption{ Leonardo IA, Canva e Seaart (Criação de Cenários - “Guardiões de Pindorama”) }%
+            \label{fig:figura8b}
+            \includegraphics[scale=0.2]{figura8b}
+            \SourceOrNote{Autoria Própria (2024)}
+            \end{figure}
+
+            \item \textbf{Desenvolvimento do Sistema - Python:}
+            \begin{itemize}[leftmargin=2em]
+                \item Interface gráfica intuitiva: O "Módulo Gestor" desenvolvido com Tkinter facilita a interação dos professores com o sistema (Figuras 9a, 9b, 9c, 9d e 9e).
+            \end{itemize}
+            
+                    
+                    \begin{figure}[!h]
+                        \centering
+                        \caption{  Módulo Gestão (Cadastro de Usuário para acessar o sistema – Perfil Professor)  }%
+                        \label{fig:figura9a}
+                        \includegraphics[scale=0.2]{figura9a}
+                        \SourceOrNote{Autoria Própria (2024)}
+                        \end{figure}
+
+                        \begin{figure}[!h]
+                            \centering
+                            \caption{ Módulo Gestão (Login de usuário para acessar o sistema)  }%
+                            \label{fig:figura9b}
+                            \includegraphics[scale=0.2]{figura9b}
+                            \SourceOrNote{Autoria Própria (2024)}
+                            \end{figure}
+
+
+                            \begin{figure}[!h]
+                                \centering
+                                \caption{ Módulo Gestão (Opções de Cadastro de Estudantes, Turmas, Habilidades e Questões. Nesta Tela terá um Botão para realizar o download do instalador do Jogo: “Guardiões de Pindorama”) }%
+                                \label{fig:figura9c}
+                                \includegraphics[scale=0.2]{figura9c}
+                                \SourceOrNote{Autoria Própria (2024)}
+                                \end{figure}
+
+
+                                \begin{figure}[!h]
+                                    \centering
+                                    \caption{ Módulo Gestão (Opções de Cadastro do Estudante)  }%
+                                    \label{fig:figura9d}
+                                    \includegraphics[scale=0.2]{figura9d}
+                                    \SourceOrNote{Autoria Própria (2024)}
+                                    \end{figure}
+
+                                    \begin{figure}[!h]
+                                        \centering
+                                        \caption{  Módulo Gestão (Opções de Cadastro de Turmas)  }%
+                                        \label{fig:figura9e}
+                                        \includegraphics[scale=0.2]{figura9e}
+                                        \SourceOrNote{Autoria Própria (2024)}
+                                        \end{figure}
+ 
+                                        \begin{figure}[!h]
+                                            \centering
+                                            \caption{  Módulo Gestão (Opções de Cadastro de Habilidades)  }%
+                                            \label{fig:figura9f}
+                                            \includegraphics[scale=0.2]{figura9f}
+                                            \SourceOrNote{Autoria Própria (2024)}
+                                            \end{figure}
+ 
+                                            \begin{figure}[!h]
+                                                \centering
+                                                \caption{ Módulo Gestão (Opções de Cadastro de Questões)  }%
+                                                \label{fig:figura9g}
+                                                \includegraphics[scale=0.2]{figura9g}
+                                                \SourceOrNote{Autoria Própria (2024)}
+                                                \end{figure}
+ 
+                                                \begin{figure}[!h]
+                                                    \centering
+                                                    \caption{  Módulo Gestão (Opções de acesso à relatórios de Alunos)  }%
+                                                    \label{fig:figura9h}
+                                                    \includegraphics[scale=0.2]{figura9h}
+                                                    \SourceOrNote{Autoria Própria (2024)}
+                                                    \end{figure}
+                                                    \clearpage
+
+                                                    \item \textbf{Jogo interativo: :}
+                                                    \begin{itemize}[leftmargin=2em]
+                                                        \item Utilizando Pygame, foram implementados gráficos, animações e controles que proporcionam uma experiência de aprendizagem envolvente, com o uso do jogo: “Guardiões de Pindorama” (Figuras 10a, 10b, 10c, 10d, 10e e 10f). 
+                                                    \end{itemize}
+
+                                                    \begin{figure}[!h]
+                                                        \centering
+                                                        \caption{ Pygame (Tela de Acesso ao Jogo “Guardiões de Pindorama”)   }%
+                                                        \label{fig:figura10a}
+                                                        \includegraphics[scale=0.2]{figura10a}
+                                                        \SourceOrNote{Autoria Própria (2024)}
+                                                        \end{figure}
+                                
+                                                        \begin{figure}[!h]
+                                                            \centering
+                                                            \caption{ Pygame (Tela de Menu de Opções - “Guardiões de Pindorama”)   }%
+                                                            \label{fig:figura10b}
+                                                            \includegraphics[scale=0.2]{figura10b}
+                                                            \SourceOrNote{Autoria Própria (2024)}
+                                                            \end{figure}
+                                
+                                
+                                                            \begin{figure}[!h]
+                                                                \centering
+                                                                \caption{ Pygame (Tela Seleção de Personagem - “Guardiões de Pindorama”)  }%
+                                                                \label{fig:figura10c}
+                                                                \includegraphics[scale=0.2]{figura10c}
+                                                                \SourceOrNote{Autoria Própria (2024)}
+                                                                \end{figure}
+                                
+                                
+                                                                \begin{figure}[!h]
+                                                                    \centering
+                                                                    \caption{ Pygame (Tela Seleção de Área (Mapa) - “Guardiões de Pindorama”)   }%
+                                                                    \label{fig:figura10d}
+                                                                    \includegraphics[scale=0.2]{figura10d}
+                                                                    \SourceOrNote{Autoria Própria (2024)}
+                                                                    \end{figure}
+                                
+                                                                    \begin{figure}[!h]
+                                                                        \centering
+                                                                        \caption{ Pygame (Tela de Fase - “Guardiões de Pindorama”)  }%
+                                                                        \label{fig:figura10e}
+                                                                        \includegraphics[scale=0.2]{figura10e}
+                                                                        \SourceOrNote{Autoria Própria (2024)}
+                                                                        \end{figure}
+                                 
+                                                                        \begin{figure}[!h]
+                                                                            \centering
+                                                                            \caption{  Pygame (Tela de Game Over - “Guardiões de Pindorama”)  }%
+                                                                            \label{fig:figura10f}
+                                                                            \includegraphics[scale=0.2]{figura10f}
+                                                                            \SourceOrNote{Autoria Própria (2024)}
+                                                                            \end{figure}
+ 
+                                                                            \clearpage                                                                          

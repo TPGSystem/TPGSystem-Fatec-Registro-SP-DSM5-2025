@@ -1,0 +1,87 @@
+%%%% fatec-article.tex, 2024/03/10
+
+%% Classe de documento
+\documentclass[
+  a4paper,%% Tamanho de papel: a4paper, letterpaper (^), etc.
+  12pt,%% Tamanho de fonte: 10pt (^), 11pt, 12pt, etc.
+  english,%% Idioma secundário (penúltimo) (>)
+  brazilian,%% Idioma primário (último) (>)
+]{article}
+
+%% Pacotes utilizados
+\usepackage[]{fatec-article}
+\Author{1}{Name={SATYRO, Gilberto S.\\ VEIGA, Pedro X. \\ SILVA, Raphael P.\\ ARAI, Vinicius C.}}
+
+\Author{2}{Name={\{ gilberto.satyro@fatec.sp.gov.br \}\\ \{ pedro.veiga01@fatec.sp.gov.br \} \\ \{ raphael.silva130@fatec.sp.gov.br\} \\ \{ vinicius.arai@fatec.sp.gov.br \}}}
+
+%% Definição das palavras-chaves/keywords
+\Keyword{1}{Trilha Pedagógica Gamificada}{Gamified Pedagogical Trail}
+\Keyword{2}{RPG (Role-Playing Game)}{RPG (Role-Playing Game)}
+\Keyword{3}{Metodologias Ativas de Aprendizagem}{Active Learning Methodologies}
+\Keyword{4}{Educação Integral}{Integral Education}
+\Keyword{5}{Gamificação Pedagógica}{Pedagogical Gamification}
+\Keyword{6}{DUA – Desenho universal da Aprendizagem}{DUA – Universal Design of Learning}
+\Keyword{7}{Tecnologia Educacional}{Educational technology}
+
+%%%% Resumo no idioma primário (brazilian)
+\begin{Abstract}[brazilian]%% Idioma (brazilian ou english)
+  Este artigo propõe uma análise detalhada da aplicação de uma Trilha Pedagógica Gamificada com elementos de Role-Playing Game (RPG) no contexto educacional. A pesquisa busca desenvolver estratégias inovadoras baseadas em Metodologias Ativas de Aprendizagem, promovendo um aprendizado mais significativo e inclusivo em diferentes ambientes acadêmicos. O texto destaca a relevância da Gamificação Pedagógica para engajar estudantes, desenvolver habilidades e competências, e fomentar a construção do conhecimento de forma interdisciplinar. Nesse contexto, é descrito um sistema que oferece aos estudantes estímulos por meio de uma interface de jogo eletrônico, com desafios intelectuais como perguntas e respostas, análise de dados e imagens, quebra-cabeças e combates virtuais. Os resultados obtidos alimentarão a interface do professor, apresentando dados de monitoramento e relatórios que evidenciam as habilidades desenvolvidas, recuperadas e consolidadas pelos estudantes, facilitando a elaboração de planos de aula mais coerentes e alinhados às necessidades da sala de aula. Além disso, o artigo reforça a importância de alinhar essa abordagem às diretrizes curriculares nacionais e aos objetivos de uma educação integral. Por fim, são discutidas reflexões sobre o estado da arte, metodologias similares e plataformas que implementam propostas semelhantes de gamificação pedagógica. 
+\end{Abstract}
+
+%%%% Resumo no idioma secundário (english)
+\begin{Abstract}[english]%% Idioma (brazilian ou english)
+  This article proposes a detailed analysis of the application of a Gamified Pedagogical Pathway with Role-Playing Game (RPG) elements in the educational context. The research aims to develop innovative strategies based on Active Learning Methodologies, promoting more meaningful and inclusive learning experiences in various academic environments. The text highlights the relevance of Pedagogical Gamification in engaging students, developing skills and competencies, and fostering interdisciplinary knowledge construction. In this context, a system is described that provides students with stimuli through a digital game interface, featuring intellectual challenges such as questions and answers, data and image analysis, puzzles, and virtual combat. The results obtained will feed the teacher's interface, presenting monitoring data and reports that highlight the skills developed, recovered, and consolidated by students, facilitating the preparation of more coherent lesson plans aligned with classroom needs. Additionally, the article emphasizes the importance of aligning this approach with national curriculum guidelines and the goals of comprehensive education. Finally, reflections on the state of the art, similar methodologies, and platforms implementing comparable gamification proposals are discussed. 
+\end{Abstract}
+
+%% Processamento de entradas (itens) do índice remissivo (makeindex)
+\makeindex%
+
+%% Arquivo(s) de referências
+\addbibresource{fatec-article.bib}
+
+%% Início do documento
+\begin{document}
+
+% Seções e subseções
+%\section{Título de Seção Primária}%
+
+%\subsection{Título de Seção Secundária}%
+
+%\subsubsection{Título de Seção Terciária}%
+
+%\paragraph{Título de seção quaternária}%
+
+%\subparagraph{Título de seção quinária}%
+
+\section*{Introdução}%
+\label{sect:intro}
+\input{Topicos/introducao}
+
+\section*{OBJETIVO} \label{sect:obj}
+
+\input{Topicos/objetivo}
+
+\section*{ESTADO DA ARTE} \label{sect:estadoarte}
+
+\input{Topicos/estadodaarte}
+
+\section*{METODOLOGIA} \label{sect:metodologia}
+
+\input{Topicos/metodologia}
+
+\section*{RESULTADOS PRELIMINARES}\label{sect:resultados}
+
+\input{Topicos/resultados}
+
+\section*{CONCLUSÃO}\label{sect:conclusao}
+
+\input{Topicos/conclusao}
+
+\printbibliography
+
+%% Elementos pós-textuais (opcionais): Apêndice e Anexo
+%Caso for utilizar, basta retirar o símbolo de % na frente do comando
+%\input{./Extras/post-textual}
+
+%% Fim do documento
+\end{document}

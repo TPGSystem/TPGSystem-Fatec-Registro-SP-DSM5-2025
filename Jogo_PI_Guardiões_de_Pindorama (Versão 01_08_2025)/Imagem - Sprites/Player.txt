@@ -1,0 +1,251 @@
+Necessito criar uma classe de Personagem Jogavel , chamado "Player"
+
+ele estará funcionando inicialmente em um jogo estilo "plataforma"
+
+os comandos são:
+
+teclas: "A" ou "Lef" = anda para Esquerda;
+teclas: "D" ou "Right" = anda para a Direita;
+Teclas: "W" ou "Up" = Personagem pula mais Alto
+Teclas: "S" ou "Down" = Personagem Agacha
+Tecla: "Space" = Pula
+teclas: "S" ou "Down" + "Space" = Personagem Escorrega para a direção que está parado
+
+Quando escolher o personagem, deverá carregar as seguintes informações:
+personagem 1 - "IndígenaM", "For" = 5, "Agi" = 15, "Res" = 10, "Sab = 10"
+personagem 2 - "IndígenaF", "For" = 5, "Agi" = 5, "Res" = 5, "Sab = 5"
+personagem 3 - "BandeirantesM", "For" = 15, "Agi" = 10, "Res" = 5, "Sab = 10"
+personagem 4 - "BandeirantesF", "For" = 5, "Agi" = 5, "Res" = 5, "Sab = 5"
+personagem 5 - "AfricanoM", "For" = 10, "Agi" = 15, "Res" = 10, "Sab = 5"
+personagem 6 - "AfricanoM", "For" = 5, "Agi" = 5, "Res" = 5, "Sab = 5"
+
+Estes status vai influenciar a mecânica do Jogo.
+
+O personagem 1, possui as seguintes sprites:
+Descanso (Rest) = R0.png e R1.png
+Andando (Movie) = M0.png, M1.png, M2.png, M3.png, M4.png, M5.png, M6.png, M7.png
+Ataque (Shot) = S0.png, S1.png, S2.png, S3.png, S4.png, S5.png
+
+Seria importante criar este personagem no arquivo OBJ.py, como Player e carregá-lo no Level(Scene) em Scenes.py
+
+A ideia é que cada personagem possua a mesma mecânica, so mude as sprites
+
+A imagem original do Personagem terá 200 x 200 px
+
+
+
+OBS: Já existe uma tela de seleção de personagens, o que tem que fazer é identificar a posição do Cursor e carregar esta informação no mapa da fase (Level)
+
+class Char_Select(Scene):
+    """Classe para a tela de seleção de personagens."""
+    
+    def __init__(self):
+        super().__init__()  # Chama o construtor da classe base
+
+        # Fundo e Moldura
+        try:
+            self.bg = Obj("assets/charSelect/Fundo2.png", [0, 0], [self.all_sprites])  # Fundo da seleção
+            self.bg_mold = Obj("assets/charSelect/Moldura.png", [-28, -20], [self.all_sprites], size=(1344, 756))  # Moldura da tela
+        except pygame.error as e:
+            print(f"Erro ao carregar a imagem de fundo ou moldura: {e}")  # Exibe erro caso a imagem não carregue
+
+        # Inicialização do cursor
+        self.cursor_pos = [0, 0]  # Posição inicial [linha, coluna]
+        self.cursor = Obj("assets/charSelect/IndChar.png", [35, 45], [self.all_sprites], size=(203, 235))  # Imagem do cursor
+        self.cursor_choose = 0  # Índice do personagem selecionado
+        
+        # Local dos Status do Personagem
+        self.plate = Obj("assets/charSelect/placa.png", [733, 353], [self.all_sprites], size=(500, 310))  # Placa para status
+        
+        # Estrutura de dados para armazenar informações dos personagens
+        self.characters = [
+            {
+                "image_selected": "assets/charSelect/Indígena_M_C.png",
+                "image_unselected": "assets/charSelect/Indígena_M_PB.png",
+                "pose": "assets/charSelect/Pose_Indigena1.png",
+                "position": [67, 82],
+                "pose_position": [320, 100],
+                "size_selected": (140, 178),
+                "size_unselected": (125, 159),
+                "pose_size": (469, 569),
+                "history": "assets/charSelect/Hist_IndM.png",
+                "status_image": "assets/charSelect/StatusInd.png"
+            },
+            {
+                "image_selected": "assets/charSelect/Indígena_F_PB.png",
+                "image_unselected": "assets/charSelect/Indígena_F_PB.png",
+                "pose": "assets/charSelect/Pose_Indigena2.png",
+                "position": [217, 82],
+                "pose_position": [371, 140],
+                "size_selected": (140, 178),
+                "size_unselected": (125, 159),
+                "pose_size": (324, 535),
+                "history": "assets/charSelect/Hist_Block.png",
+                "status_image": "assets/charSelect/StatusOff.png"
+            },
+            {
+                "image_selected": "assets/charSelect/Bandeirante_M_C.png",
+                "image_unselected": "assets/charSelect/Bandeirante_M_PB.png",
+                "pose": "assets/charSelect/Pose_Bandeirantes1.png",
+                "position": [67, 267],
+                "pose_position": [325, 120],
+                "size_selected": (140, 178),
+                "size_unselected": (125, 159),
+                "pose_size": (396, 553),
+                "history": "assets/charSelect/Hist_EurM.png",
+                "status_image": "assets/charSelect/StatusEur.png"
+            },
+            {
+                "image_selected": "assets/charSelect/Bandeirante_F_PB.png",
+                "image_unselected": "assets/charSelect/Bandeirante_F_PB.png",
+                "pose": "assets/charSelect/Pose_Bandeirantes2.png",
+                "position": [217, 267],
+                "pose_position": [371, 120],
+                "size_selected": (140, 178),
+                "size_unselected": (125, 159),
+                "pose_size": (324, 550),
+                "history": "assets/charSelect/Hist_Block.png",
+                "status_image": "assets/charSelect/StatusOff.png"
+            },
+            {
+                "image_selected": "assets/charSelect/Africano_M_C.png",
+                "image_unselected": "assets/charSelect/Africano_M_PB.png",
+                "pose": "assets/charSelect/Pose_Africano1.png",
+                "position": [67, 454],
+                "pose_position": [260, 110],
+                "size_selected": (140, 178),
+                "size_unselected": (125, 159),
+                "pose_size": (529, 567),
+                "history": "assets/charSelect/Hist_AfrM.png",
+                "status_image": "assets/charSelect/StatusAfr.png"
+            },
+            {
+                "image_selected": "assets/charSelect/Africana_F_PB.png",
+                "image_unselected": "assets/charSelect/Africana_F_PB.png",
+                "pose": "assets/charSelect/Pose_Africano2.png",
+                "position": [217, 454],
+                "pose_position": [360, 85],
+                "size_selected": (140, 178),
+                "size_unselected": (125, 159),
+                "pose_size": (342, 588),
+                "history": "assets/charSelect/Hist_Block.png",
+                "status_image": "assets/charSelect/StatusOff.png"
+            },
+        ]
+        
+        # Carregar a imagem do primeiro personagem ao iniciar
+        self.load_character(self.cursor_choose)
+        
+        # Matriz de posições do cursor
+        self.cursor_positions = [
+            [35, 45], [180, 45],
+            [35, 232], [180, 232],
+            [35, 420], [180, 420]
+        ]
+
+    def load_character(self, index):
+        """Carrega a imagem do personagem selecionado."""
+        # Limpa os sprites antigos antes de carregar novos
+        self.all_sprites.empty()
+
+        for i, character in enumerate(self.characters):
+            # Carregar a imagem destacada (selecionada) para o personagem ativo
+            if i == index:
+                Obj(character["image_selected"], character["position"], [self.all_sprites], size=character["size_selected"])
+                
+            else:
+                # Carregar a imagem não destacada (não selecionada)
+                Obj(character["image_unselected"], character["position"], [self.all_sprites], size=character["size_unselected"])
+
+    def handle_events(self, event):
+        """Gerencia eventos de entrada do usuário na tela de seleção de personagens."""
+        if event.type == pygame.KEYDOWN:
+            # Verifica se a tecla Enter foi pressionada
+            if event.key == pygame.K_RETURN:
+                # Salvar o personagem selecionado
+                self.option_data["selected_character"] = self.cursor_choose
+                self.save_file("teste.json", self.option_data)  # Salva os dados
+                
+                if self.cursor_choose == 0:  # Se o primeiro personagem for selecionado
+                    self.change_scene(Map())  # Muda para a cena do mapa
+
+            # Movimento do cursor para baixo
+            if event.key == pygame.K_DOWN or event.key == pygame.K_s:
+                if self.cursor_choose + 2 < len(self.cursor_positions):  # Permite mover até o último personagem
+                    self.cursor_choose += 2  # Move para o próximo personagem na coluna
+                self.cursor.rect.y = self.cursor_positions[self.cursor_choose][1]  # Atualiza a posição do cursor
+                self.load_character(self.cursor_choose)  # Carrega o personagem na nova posição
+
+            # Movimento do cursor para cima
+            elif event.key == pygame.K_UP or event.key == pygame.K_w:
+                if self.cursor_choose - 2 >= 0:  # Permite mover para cima se não estiver na primeira linha
+                    self.cursor_choose -= 2  # Move para o personagem anterior na coluna
+                self.cursor.rect.y = self.cursor_positions[self.cursor_choose][1]  # Atualiza a posição do cursor
+                self.load_character(self.cursor_choose)  # Carrega o personagem na nova posição
+
+            # Movimento do cursor para a direita
+            if event.key == pygame.K_RIGHT or event.key == pygame.K_d:
+                if self.cursor_choose % 2 == 0 and self.cursor_choose + 1 < len(self.cursor_positions):  # Limita à primeira coluna
+                    self.cursor_choose += 1  # Move para a direita
+                self.cursor.rect.x = self.cursor_positions[self.cursor_choose][0]  # Atualiza a posição do cursor
+                self.load_character(self.cursor_choose)  # Carrega o personagem na nova posição
+
+            # Movimento do cursor para a esquerda
+            elif event.key == pygame.K_LEFT or event.key == pygame.K_a:
+                if self.cursor_choose % 2 == 1:  # Limita à segunda coluna
+                    self.cursor_choose -= 1  # Move para a esquerda
+                self.cursor.rect.x = self.cursor_positions[self.cursor_choose][0]  # Atualiza a posição do cursor
+                self.load_character(self.cursor_choose)  # Carrega o personagem na nova posição
+                    
+    def draw(self, screen):
+        """Desenha a cena de seleção de personagens na tela."""
+        # Desenhar primeiro o fundo
+        self.bg.draw(screen)
+        
+        # Desenha todos os personagens e seus status
+        super().draw(screen)  # Chama o método draw da classe pai
+        self.plate.draw(screen)  # Desenha a placa na tela
+
+        # Desenhar a imagem de status do personagem
+        self.draw_status_image(screen, self.characters[self.cursor_choose]["status_image"])
+        
+        # Desenhar a imagem do histórico do personagem
+        self.draw_history(screen, self.characters[self.cursor_choose]["history"])
+        
+        # Desenha a pose do personagem atual na frente
+        current_character = self.characters[self.cursor_choose]
+        pose_image = Obj(current_character["pose"], current_character["pose_position"], [self.all_sprites], size=current_character["pose_size"])
+        pose_image.draw(screen)  # Desenha a pose na tela
+
+        # Desenha o cursor na tela
+        self.cursor.draw(screen)
+        self.bg_mold.draw(screen)  # Desenha a moldura sobre o fundo 
+        
+    def draw_history(self, screen, history_image_path):
+        """Carrega e desenha a imagem do histórico do personagem na tela."""
+        status_image = Obj(history_image_path, [740, 60], [self.all_sprites], size=(500, 290))  # Ajuste o tamanho conforme necessário
+        status_image.draw(screen)  # Desenha a imagem de status na tela
+         
+    def draw_status_image(self, screen, status_image_path):
+        """Carrega e desenha a imagem de status do personagem na tela."""
+        status_image = Obj(status_image_path, [760, 380], [self.all_sprites], size=(450, 240))  # Ajuste o tamanho conforme necessário
+        status_image.draw(screen)  # Desenha a imagem de status na tela
+
+Essa é a classe Level
+
+# Criando Tela de Nível
+class Level(Scene):
+    """Classe para a tela de nível."""
+    
+    def __init__(self):
+        super().__init__()  # Chama o construtor da classe base
+        
+        self.img = Obj("assets/level.png", [0, 0], [self.all_sprites])  # Carrega a imagem de nível
+        
+    def handle_events(self, event):
+        """Gerencia eventos de entrada do usuário na tela de nível."""
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_RETURN:
+                self.change_scene(GameOver())  # Muda para a cena de Game Over            
+        return super().handle_events(event)
+
