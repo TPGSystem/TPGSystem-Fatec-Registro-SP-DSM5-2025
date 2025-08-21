@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<br>
+<br>
+<div class="container">
+    <div class="row">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+        google.charts.load('current', {'packages':['line']});
+        google.charts.load('current', {'packages':['bar']});
+        google.charts.setOnLoadCallback(drawChart);
+  
+      function drawChart() {
+  
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Semestre');
+        data.addColumn('number', 'Alunos');
+        data.addColumn('number', 'Metas');
+        data.addColumn('number', 'Turmas');
+  
+        data.addRows([
+          ['1º Semestre',  60, 70, 71],
+          ['2º Semestre',  61.5, 70, 69],
+          ['3º Semestre',  65, 70, 79],
+          ['4º Semestre',  63, 70, 68.5],
+          ['5º Semestre',  71, 70, 72.3],
+          ['6º Semestre',   70.5, 70,  75.7],
+        ]);
+  
+        var options = {
+          chart: {
+            title: 'Desenvolvimento',
+            subtitle: 'Alunos e Turmas'
+          },
+          width: 500,
+          height: 300
+        };
+  
+        var chart = new google.charts.Line(document.getElementById('linechart_material'));
+  
+        chart.draw(data, google.charts.Line.convertOptions(options));
+
+        var data = google.visualization.arrayToDataTable([
+          ['Geral', 'Acertos', 'Erros'],
+          ['Alunos', 56, 43],
+          ['Turmas', 56, 40]
+        ]);
+
+        var options = {
+          chart: {
+            title: 'Acertos e Erros',
+            subtitle: 'Alunos e Turmas',
+          }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div id="linechart_material"></div>
+        </div>
+        <div class="col-md-6">
+          <div id="columnchart_material"></div>
+        </div>
+      </div>
+    </div>
+    </div>
+</div>
+{% endblock content %}

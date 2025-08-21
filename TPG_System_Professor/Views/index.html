@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- Container de introdução/explorar -->
+<div class="container-fluid d-flex justify-content-center align-items-center" style="background-image: url('./static/imgs/background-explore.png'); background-repeat: no-repeat; height: 600px;">
+    <div class="row" style="font-size: 45px;">
+        <div class="col-md-12 text-center text-white fw-semibold">Explore e conheça mais sobre o</div>
+        <div class="col-md-12 text-center text-white fw-semibold">
+            <a href="" class="text-white text-decoration-none fw-bold">TPG-System</a> 
+            e a 
+            <a href="" class="text-white text-decoration-none fw-bold">FOUND</a>
+        </div>
+        <div class="col-md-12 d-flex justify-content-center mt-5 "><a href="#found"><button class="btn btn-outline-light fw-bold border-3" style="font-size: 23px;">Explorar</button></a></div>
+    </div>
+</div>
+<!-- Fim do container de introdução/explorar -->
+
+<!-- Container sobre a Found -->
+<div class="container" id="found">
+    <div class="row">
+        <div class="col-md-6 d-flex justify-content-center align-items-center" style="height: 450px;">
+            <img src="./static/imgs/found-logo.png" alt="Found-logo" style="width: 450px; height: 200px;">
+        </div>
+        <div class="col-md-6 text-center mt-5">
+            <div class="fw-bold mt-4" style="font-size: 25px;">Sobre Nós</div>
+            <div class="mt-5 text-start" style="font-size: 22px;">
+                A Foundation of Software Development –ME, carinhosamente conhecida como ”FOUND” , 
+                surge como pioneira no cenário da educação, trazendo consigo uma abordagem tecnológica inovadora no desenvolvimento e aplicação da Gamificação Pedagógica. 
+                Com soluções sob medida para as mais diversas necessidades de nossos clientes, estamos determinados a revolucionar o processo educacional.
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fim do container sobre a Found -->
+ <hr>
+
+<!-- Container sobre o TPG-System -->
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6 text-center mt-5">
+        <div class="fw-bold mt-4" style="font-size: 25px;">TPG-System</div>
+        <div class="mt-5 text-start" style="font-size: 22px;">
+          Por meio do “Sistema de Trilhas Pedagógicas Gamificadas - TPG System”, 
+          os estudantes têm a oportunidade de enfrentar desafios e resolver situações-problema de forma individual ou colaborativa, 
+          utilizando elementos de Role-Playing Game para alcançarem resultados satisfatórios.​
+        </div>
+      </div>
+      <div class="col-md-6 d-flex justify-content-center align-items-center" style="height: 450px;">
+        <img src="./static/imgs/tpg_system-logo.png" alt="Found-logo" style="width: 50%; height: 50%;">
+     </div>
+    </div>
+</div>
+<!-- Fim do container sobre o TPG-System -->
+{% endblock content %}

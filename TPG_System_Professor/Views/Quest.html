@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container mt-5" style="height: 400px;">
+    <div class="row">
+        <table class="table table-hover table-striped-columns">
+            <thead>
+                <tr>
+                  <th scope="col" style="font-size: 15px;">Tipo</th>
+                  <th scope="col" style="font-size: 15px;">Região</th>
+                  <th scope="col" style="font-size: 15px;">Tema</th>
+                  <th scope="col" style="font-size: 15px;">Questão</th>
+                  <th scope="col" style="font-size: 15px;">Resposta 1</th>
+                  <th scope="col" style="font-size: 15px;">Resposta 2</th>
+                  <th scope="col" style="font-size: 15px;">Resposta 3</th>
+                  <th scope="col" style="font-size: 15px;">Resposta 4</th>
+                  <th scope="col" style="font-size: 15px;">Validação 1</th>
+                  <th scope="col" style="font-size: 15px;">Validação 2</th>
+                  <th scope="col" style="font-size: 15px;">Validação 3</th>
+                  <th scope="col" style="font-size: 15px;">Validação 4</th>
+                  <th scope="col" style="font-size: 15px;">Ações</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Objetivo</th>
+                  <td>Iguape</td>
+                  <td>Cores</td>
+                  <td>Quantas cores existem no arco-íris?</td>
+                  <td>5 cores</td>
+                  <td>2 cores</td>
+                  <td>7 cores</td>
+                  <td>12 cores</td>
+                  <td>Errada</td>
+                  <td>Errada</td>
+                  <td>Correta</td>
+                  <td>Errada</td>
+                  <td colspan="2">
+                    <a href="" class="btn" style="background-color: #5491C7;"><img src="../static/imgs/Vector(3).png" alt="Editar" style="width: 22px; height: 20px;"></a>
+                    <a href="" class="btn" style="background-color: #FE4D4D;"><img src="../static/imgs/Vector(4).png" alt="Deletar" style="width: 22px; height: 20px;"></a>
+                  </td>
+                </tr>
+              </tbody>
+        </table>
+    </div>
+</div>
+
+{% endblock content %}
